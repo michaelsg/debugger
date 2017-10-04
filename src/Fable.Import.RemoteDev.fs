@@ -24,8 +24,8 @@ module RemoteDev =
 
     type Options =
         { remote : bool
-          port : int
-          hostname : string
+          port : int option
+          hostname : string option
           secure : bool
           getActionType : (obj->obj) option
           serialize : obj }
